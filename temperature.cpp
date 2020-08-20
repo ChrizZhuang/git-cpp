@@ -13,9 +13,13 @@ double convert_F_to_C(double temp_F)
 
 int main(void)
 {
+    // print higher number of precision
+    std::cout.precision(15);
+
     // i++ is equivalent to i += 1
     for (int i = 0; i < 100; i++)
     {
+        //double ss = 1.9;
         double temperature = i * 10.0;
         std::cout << "Converted temperature: " << temperature << "F = " << 
         convert_F_to_C(temperature) << " C " << std::endl;
